@@ -1,9 +1,46 @@
+
+
 # Getting start with used tech stack in project 
 
+building  spotify-app , Single-page-application (SPA) using reactjs : 
 
- * building a Spotify Clone using ReactJS and get all the required data from the official Spotify Web API. Spotify is a music application where you can listen to your favorite music. It has an inbuilt music player so that you can pause/play, repeat, and adjust the volume of music.
+Context-API
+
+Material-UI
+
+Flexbox-css
+
+recat-router-dom
+
+user authentication
+
+spotify-API
+
+
+### Snapshots of project 👇
+
+![Alt Text](Screenshot%20(301).png?raw=true "Title")
+
+
+
+![Alt Text](Screenshot%20(304).png?raw=true "Title")
+
+
+![Alt Text](Screenshot%20(305).png?raw=true "Title")
+
+
+![Alt Text](Screenshot%20(302).png?raw=true "Title")
+
+
+![Alt Text](Screenshot%20(303).png?raw=true "Title")
+
+
+
+
+
+ * building a  single page spotify-clone web app using ReactJS and get all the required data from the official Spotify Web API. Spotify is a music application where you can listen to your favorite music. It has an inbuilt music player so that you can pause/play, repeat, and adjust the volume of music.
  
-1. # Creating a React App  => npx create-react-app => npm start => http://localhost:3000 (in browser)
+ * Creating a React App  => npx create-react-app => npm start => http://localhost:3000 (in browser)
 
 ->  Delete (optional) three files from the src folder from the React App. Those three files are
 
@@ -11,30 +48,30 @@ App.test.js
 logo.svg
 setupTests.js
 
-# We are deleting these files because these are not relevant to us in any project.
+* We are deleting these files because these are not relevant to us in any project.
 
 -> Also remove import logo from "./logo.svg"; from App.js
 
-2. # Setting up Firebase
 
-3. Setting up Spotify Web API  -> To get access to the Spotify Web API so that we can get a lot of details from the API, we must create an API credential at Spotify Developers Website.
+
+* Setting up Spotify Web API  -> To get access to the Spotify Web API so that we can get a lot of details from the API, we must create an API credential at Spotify Developers Website.
 
 Here’s the full URL
 # https://developer.spotify.com/dashboard/
 
-4.Then you have to press login and login using your Spotify account, although, you can use Google, Facebook or Apple for third party agents as logging into Spotify.
+Then you have to press login and login using your Spotify account, although, you can use Google, Facebook or Apple for third party agents as logging into Spotify.
 You must be redirected to the Dashboard of spotify developer.
 
-5. If you are here, great! Just press the “Create an App” button so that we can generate our Spotify API credentials.
+ If you are here, great! Just press the “Create an App” button so that we can generate our Spotify API credentials.
 
 -> Give you app a name, in this case I will use “spotify-clone-medium” and give it a description. Make sure you agree Spotify’s Terms of Service before pressing “Create”.
 -> Here, copy the Client ID and save it somewhere, we will need it in the app. We would not require the Client Secret but you need to keep it a secret and should not be shared in any circumstances
 -> Now, click on the Edit Settings button
 -> in the Redirect URIs field, enter our development server address which is http://localhost:3000/ (do not forget the slash in the end). After you enter click on the Add button besides it and finally, hit Save.
 
-6. Work on the Login Page -> Login.js, css
+ Work on the Login Page -> Login.js, css
 
-7. Work on Spotify Configuration File -> Spotify.js
+ Work on Spotify Configuration File -> Spotify.js
 
 Here’s the logic behind the Spotify configuration file:
 
@@ -66,8 +103,8 @@ in spotify.js file we made a new function named "getTokenFromUrl" which will bas
 
 #  Setting up Context API
 
-# *Problem: Prop Drilling => Solution: Context API
-# *Problem: Redux => solution: Reducer, DataLayer or SateProvider
+* Problem: Prop Drilling => Solution: Context API
+* Problem: Redux => solution: Reducer, DataLayer or SateProvider
 
 Now it’s the time to set up React Context API and make the reducer. To know more about React Context API and how to set it up, please read this blog posted under Clever Programmer! In this article, we will only set up the reducer so that we can remain in the context of making Spotify Clone.
 Now that we have the Context API, we need to update App.js so that it uses the Context API instead of local states.
@@ -77,7 +114,7 @@ So let’s see what we have changed in the App.js:
 * We also have fetched the Discover weekly playlist and stored it in the Context API because we need it in the Player component.
 * We have passed spotify as a "prop" to the "Player" component
 
-9. Creating the Player->
+* Creating the Player->
 In the previous sections we made the Player component using the BEM Convention, so if you haven’t make it, make it now! Because we are going to work on that primarily in this section. We will be making sub-components first and then arrange them properly into the main Player component.\
 
 The entire Player component will have three sub components
@@ -97,12 +134,10 @@ The entire Player component will have three sub components
  * It runs a function given inside it
  * we give [] to specify it to run it only once
  * if we put a variable inside [name,value,id] the useEffect will run whenever the name var changes.
- 
 
-# *Problem: Prop Drilling => Solution: Context API
-# *Problem: Redux => solution: Reducer, DataLayer or SateProvider
 
-#BEM ->  In a React context, A BEM block generally maps to a single React presentational component.
+# BEM 
+* In a React context, A BEM block generally maps to a single React presentational component.
 A 'Block' “encapsulates a standalone entity that is meaningful on its own”. So, every React component you write must have a Block class name on its outermost element.
 'Elements' are “parts of a Block and have no standalone meaning”. So Element class names should be given to inner… elements.
 'Modifiers' are “flags on Blocks or Elements” which you can use to change the appearance of the modified item.
