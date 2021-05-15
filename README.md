@@ -8,7 +8,7 @@ building  spotify-app , Single-page-application (SPA) using reactjs :
 
 * Material-UI
 
-* Flexbox-css
+* Flexbox-css, BEM convention
 
 * react-router-dom
 
@@ -137,7 +137,7 @@ The entire Player component will have three sub components
  * if we put a variable inside [name,value,id] the useEffect will run whenever the name var changes.
 
 
-# BEM 
+# BEM  convention
 
 * In a React context, A BEM block generally maps to a single React presentational component.
 
