@@ -22,17 +22,16 @@ spotify-API
 ![Alt Text](Screenshot%20(301).png?raw=true "Title")
 
 
+![Alt Text](Screenshot%20(302).png?raw=true "Title")
+
+
+![Alt Text](Screenshot%20(303).png?raw=true "Title")
+
 
 ![Alt Text](Screenshot%20(304).png?raw=true "Title")
 
 
 ![Alt Text](Screenshot%20(305).png?raw=true "Title")
-
-
-![Alt Text](Screenshot%20(302).png?raw=true "Title")
-
-
-![Alt Text](Screenshot%20(303).png?raw=true "Title")
 
 
 
